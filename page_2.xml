@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<main>
+  <PageData>
+	<MainHeading><![CDATA[]]></MainHeading>
+    <SubHeading><![CDATA[]]></SubHeading>
+    <PageText>
+      <pText><![CDATA[<b>Features of Arduino</b>]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[
+      
+      <ol class="DecimalNumberClass">
+        <li>Arduino boards are able to read analog or digital input signals from different sensors and turn it into an output such as activating a motor, turning LED on/off, connect to the cloud and many other actions.</li>
+        <li>We can control our board functions by sending a set of instructions to the microcontroller on the board via Arduino IDE (referred to as uploading software).</li>
+        <li>Unlike most previous programmable circuit boards, Arduino does not need an extra piece of hardware (called a programmer) in order to load a new code onto the board. We can simply use a USB cable.</li>
+        <li>Arduino IDE uses a simplified version of C++, making it easier to learn to program.</li>
+        <li>Arduino provides a standard form factor that breaks the functions of the micro- controller into a more accessible package.</li>
+      </ol>
+
+      ]]></pText>
+    </PageText>             
+  </PageData>
+</main>

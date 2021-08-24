@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<main>
+  <PageData>
+	<MainHeading><![CDATA[]]></MainHeading>
+    <SubHeading><![CDATA[]]></SubHeading>
+    <PageText>
+      <pText><![CDATA[<b>Program Structure</b>]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[Arduino programs can be divided in three main parts: <b>Structure,Values (variables and constants) and Functions</b>. Let us start with the Structure. Values and Functions will be discussed in the coming sections. Structure consist of two main functions – setup () function and loop () function.]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[<b>setup () function -</b> The setup() function is called when a sketch starts. It is used to initialize the variables, pin modes, start using libraries, etc. The setup () function will only run once, after each power up or reset of the Arduino board.]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[<b>loop () function -</b> After creating a setup() function, which initializes and sets the initial values, the loop() function allows our program to iteratively do the specified task in the program. This is used to actively control the Arduino board.]]></pText>
+    </PageText>
+      
+  </PageData>
+</main>

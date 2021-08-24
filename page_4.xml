@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<main>
+  <PageData>
+	<MainHeading><![CDATA[]]></MainHeading>
+    <SubHeading><![CDATA[]]></SubHeading>
+    <PageText>
+      <pText><![CDATA[<b></b>Arduino IDE</b>]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[Arduino IDE is open source software that is used to program the Arduino controller board. It is based on variations of C and C++programming language. It can be downloaded from Arduino’s official Website and installed into PC. Following steps are required to set up an Arduino board.]]></pText>
+    </PageText> 
+
+     <PageText>
+      <pText><![CDATA[
+      
+      <ol class="DecimalNumberClass">
+        <li>Power the board by connecting it to a PC via USB cable: The power source is selected with a jumper, a small piece of plastic that fits onto two of the three pins between the USB and power jacks. Check that it is on the two pins closest to the USB port. The green power LED (labelled PWR) should glow.</li>
+        <li>Launch the Arduino IDE: After the Arduino IDE software is downloaded, we need to unzip the folder. Inside the folder, we can find the application icon with an infinity label (application.exe). Double-click the icon to start the IDE.</li>
+        <li>Open the first project: Once the software starts, we have two options − Create a new project or open an existing project example. To create a new project, select File → New. To open an existing project example, select File → Example.</li>
+        <li>Select the Arduino board -To avoid any error while uploading our program to the board, we must select the correct Arduino board name, which matches with the board connected to your computer. Go to Tools → Board and select your board. Here, we will be selecting Arduino Uno board, but we must select the name matching the board that we are using.</li>
+        <li>Select the serial port - Select the serial device of the Arduino board. Go to Tools → Serial Port menu. This is likely to be COM3 or higher (COM1 and COM2 are usually reserved for hardware serial ports). To find out, we can disconnect our Arduino board and re-open the menu, the entry that disappears should be of the Arduino board. Reconnect the board and select that serial port.</li>
+        <li>Upload the program to our board - Before explaining how we can upload our program to the board, we must demonstrate the function of each symbol appearing in the Arduino IDE toolbar. Figure 6.2 explains various symbols on Arduino IDE toolbar.</li>
+      </ol>
+
+      ]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[<div class="BigImgClass" style="text-align:center"><img src="./images/fig_2.png"></div>]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[<div class="TableHeadingClass">Fig.6.2: Symbols on Arduino IDE Toolbar</div>]]></pText>
+    </PageText>  
+    <PageText>
+      <pText><![CDATA[Program coded in Arduino IDE is called a SKETCH. Following are the explanation of various symbols used in the above diagram.]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[
+      
+      <ol class="UpperAlphaClass">
+        <li>used to check if there is any compilation error.</li>
+        <li>used to upload a program to the Arduino board.</li>
+        <li>shortcut used to create a new sketch.</li>
+        <li>used to directly open one of the example sketch.</li>
+        <li>used to save our sketch.</li>
+        <li>Serial monitor used to receive serial data from the board and send the serial data to the board.</li>
+      </ol>
+      ]]></pText>
+    </PageText>
+    
+     <PageText>
+      <pText>
+      <![CDATA[<ul class="ListClassDisc">
+        <li>To create a new sketch, select File  New. Creates a new blank sketch with basic structure.</li>
+        <li>To open an existing sketch, select File  Open. Opens an existing sketch. There are some basic ready-to-use sketches available in the EXAMPLES section.</li>
+        <li>Verify: Checks the code for compilation errors.</li>
+        <li>Upload: Uploads the final code to the controller board.</li>
+        <li>Save: Saves the current sketch.</li>
+        <li>Serial Monitor: Opens the serial console. All the data printed to the console are displayed here.</li>
+      </ul>
+      ]]></pText>
+    </PageText>
+
+
+  </PageData>
+</main>

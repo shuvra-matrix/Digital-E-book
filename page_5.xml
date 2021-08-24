@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<main>
+  <PageData>
+	<MainHeading><![CDATA[]]></MainHeading>
+    <SubHeading><![CDATA[]]></SubHeading>
+    <PageText>
+      <pText><![CDATA[<b>Program Elements</b>]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[This section explains various program elements or components like structure of an Arduino sketch, variables, data types, operators, decision making, loops, functions, string objects and arrays.]]></pText>
+    </PageText>
+      
+  </PageData>
+</main>

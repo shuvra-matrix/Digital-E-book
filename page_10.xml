@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<main>
+  <PageData>
+	<MainHeading><![CDATA[]]></MainHeading>
+    <SubHeading><![CDATA[]]></SubHeading>
+    <PageText>
+      <pText><![CDATA[<b>	Decision Making</b>]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[Decision making structures specify one or more conditions to be evaluated or tested by the program. It should be along with a statement or statements to be executed if the condition is determined is true and optionally other statements to be executed if the condition is false. Following are the decision making statements supported by Arduino.]]></pText>
+    </PageText>
+
+    <PageText>
+      <pText><![CDATA[
+      
+      <ol class="LowerAlphaClass">
+        <li>if statement: It takes an expression in parenthesis and a statement or block of statements. If the expression is true then the statement or block of statements gets executed otherwise these statements are skipped. Following is the syntax of if statement.</li>
+      </ol>
+      ]]></pText>
+    </PageText>
+
+    <PageText>
+      <pText><![CDATA[
+      <div class="CodeBox">
+        <div>if (expression) {</div>
+        <div class="FourTabClass">block of statements;</div>
+        <div>}</div>
+      </div>
+      ]]></pText>
+    </PageText>
+      
+    <PageText>
+      <pText><![CDATA[<b>Example Program</b>]]></pText>
+    </PageText>
+
+    <PageText>
+      <pText><![CDATA[
+       <div class="CodeBox">
+        int a = 5;
+        void setup () {
+        }
+        void loop () {
+        <div class="FourTabClass">/* check the boolean condition */</div>
+        <div class="FourTabClass">if (a>0) /* if condition is true then execute the following statement*/ </div>
+        <div class="FourTabClass">a++;</div>
+      </div>
+      ]]></pText>
+    </PageText>
+
+    <PageText>
+      <pText><![CDATA[b.	<b>if ..else statement:</b> An if statement can be followed by an optional else statement, which executes when the expression is false. Following is the syntax of if..else statement.]]></pText>
+    </PageText>
+
+    <PageText>
+      <pText><![CDATA[
+      <div class="CodeBox">
+        <div>if (expression) {</div>
+        <div class="FourTabClass">block of statements;</div>
+        <div>}</div>
+         <div>else {</div>
+        <div class="FourTabClass">block of statements;</div>
+        <div>}</div>
+      </div>
+      ]]></pText>
+    </PageText>
+
+    <PageText>
+      <pText><![CDATA[<b>Example Program</b>]]></pText>
+    </PageText>
+
+    <PageText>
+      <pText><![CDATA[
+       <div class="CodeBox">
+        int a = 5;
+        void setup () {
+        }
+        void loop () {
+        <div class="FourTabClass">/* check the boolean condition */</div>
+        <div class="FourTabClass">if (a>0) /* if condition is true then execute the following statement*/ </div>
+        <div class="FourTabClass">a++;</div>
+        <div class="FourTabClass">else /* else condition is true then execute the following statement*/ </div>
+        <div class="FourTabClass">a--;</div>
+      </div>
+      ]]></pText>
+    </PageText>
+
+     <PageText>
+      <pText><![CDATA[c.	<b>if..else..if..else statement:</b> The if statement can be followed by an optional else if...else statement, which is very useful to test various conditions using single if...else if statement. The syntax is as follows.]]></pText>
+    </PageText>
+
+    <PageText>
+      <pText><![CDATA[
+      <div class="CodeBox">
+        <div>if (expression_1) {</div>
+        <div class="FourTabClass">block of statements;</div>
+        <div class="SixTabClass">}</div>
+         <div>else if (expression_2) {</div>
+        <div class="FourTabClass">block of statements;</div>
+        <div class="SixTabClass">}</div>
+         <div>else if (expression_n) {</div>
+        <div class="FourTabClass">block of statements;</div>
+        <div class="SixTabClass">}</div>
+         <div>else {</div>
+        <div class="FourTabClass">block of statements;</div>
+        <div class="FourTabClass">}</div>
+      </div>
+      ]]></pText>
+    </PageText>
+
+    <PageText>
+      <pText><![CDATA[<b>Example Program</b>]]></pText>
+    </PageText>
+
+    <PageText>
+      <pText><![CDATA[
+       <div class="CodeBox">
+        int a = 5;
+        void setup () {
+        }
+        void loop () {
+        <div class="FourTabClass">/* check the boolean condition */</div>
+        <div class="FourTabClass">if (a>0) /* if condition is true then execute the following statement*/ </div>
+        <div class="FourTabClass">a++;</div>
+        <div class="FourTabClass">/* check the boolean condition */</div>
+        <div class="FourTabClass">else if(a<0)/* else if condition is true then execute the following statement*/</div>
+        <div class="FourTabClass">a--;</div>
+        <div class="FourTabClass">else /* else condition is true then execute the following statement*/ </div>
+        <div class="FourTabClass">a=0;</div>
+      </div>
+      ]]></pText>
+    </PageText>
+
+    <PageText>
+      <pText><![CDATA[d.	<b>switch…case statement:</b> switch...case controls the flow of programs by allowing the programmers to specify different codes that should be executed in various conditions. In particular, a switch statement compares the value of a variable to the values specified in the case statements. When a case statement is found whose value matches that of the variable, the code in that case statement is run. The break keyword makes the switch statement exit and is typically used at the end of each case. Without a break statement, the switch statement will continue executing the following expressions until a break or the end of the switch statement is reached. Following is the syntax of switch statement.]]></pText>
+    </PageText>
+
+    <PageText>
+      <pText><![CDATA[
+      <div class="CodeBox">
+        <div>switch (variable) { </div>
+        <div class="FourTabClass">case label:</div>
+        <div class="SixTabClass">// statements </div>
+        <div class="SixFourTabClass">break;</div>
+        <div class="FourTabClass">}</div>
+        <div class="FourTabClass">case label: {</div>
+        <div class="SixTabClass">// statements </div>
+        <div class="SixTabClass">break;</div>
+        <div class="FourTabClass">}</div>
+        <div class="FourTabClass">default: {</div>
+        <div class="SixTabClass">// statements </div>
+        <div class="SixTabClass">break;</div>
+        <div class="FourTabClass">}</div>
+        <div>}</div>
+      </div>
+      ]]></pText>
+    </PageText>
+
+     <PageText>
+      <pText><![CDATA[<b>Example Program</b>]]></pText>
+    </PageText>
+
+    <PageText>
+      <pText><![CDATA[
+       <div class="CodeBox">
+        <div>switch(phase) {</div>
+        <div class="FourTabClass">case 0: Lo(); break; </div>
+        <div class="FourTabClass">case 1: Mid(); break; </div>
+        <div class="FourTabClass">case 2: Hi(); break;</div>
+        <div class="FourTabClass">default: Message(“Invalid state!”);</div>
+        <div>}</div>
+      </div>
+      ]]></pText>
+    </PageText>
+
+    <PageText>
+      <pText><![CDATA[e.	<b>Conditional operator? :</b> This is the only ternary operator in C. Syntax of the conditional operator is as follows.]]></pText>
+    </PageText>
+
+     <PageText>
+      <pText><![CDATA[
+      <div class="CodeBox">
+      <div>expression1? expression2: expression3</div>
+      </div>
+      ]]></pText>
+    </PageText>
+
+    <PageText>
+      <pText><![CDATA[Here expression1 is evaluated first. If its value is true, then expression2 is evaluated and expression3 is ignored. If expression1 is evaluated as false, then expression3 evaluates and expression2 is ignored. The result will be a value of either expression2 or expression3 depending upon which of them evaluates as true. Conditional operator associates from right to left.]]></pText>
+    </PageText>
+
+    <PageText>
+      <pText><![CDATA[<b>Example Program</b>]]></pText>
+    </PageText>
+
+    <PageText>
+      <pText><![CDATA[
+       <div class="CodeBox">
+        <div>/* Find max(a, b): */ </div>
+        <div>max = ( a > b ) ? a : b;</div>
+      </div>
+      ]]></pText>
+    </PageText>
+
+  </PageData>
+</main>

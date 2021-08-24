@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<main>
+  <PageData>
+	<MainHeading><![CDATA[]]></MainHeading>
+    <SubHeading><![CDATA[]]></SubHeading>
+    <PageText>
+      <pText><![CDATA[<b>	Time</b>]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[Arduino provides four different time manipulation functions. They are given below.]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[
+      
+      <ol class="DecimalNumberClass">
+        <li><b>delay ()</b> function - It accepts a single integer (or number) argument. This number represents the time (measured in milliseconds).</li>
+        <li><b>delayMicroseconds ()</b> function - The delayMicroseconds() function accepts a single integer (or number) argument. There are a thousand microseconds in a millisecond, and a million microseconds in a second.</li>
+        <li><b>millis ()</b> function- This function is used to return the number of milliseconds at the time the Arduino board begins running the current program.</li>
+        <li><b>micros ()</b> function - The micros() function returns the number of microseconds from the time the Arduino board begins running the current program. This number overflows i.e. goes back to zero after approximately 70 minutes.</li>
+      </ol>
+      ]]></pText>
+    </PageText>
+  </PageData>
+</main>

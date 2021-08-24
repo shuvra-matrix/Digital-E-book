@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<main>
+  <PageData>
+	<MainHeading><![CDATA[]]></MainHeading>
+    <SubHeading><![CDATA[]]></SubHeading>
+    <PageText>
+      <pText><![CDATA[<b>	Data Types</b>]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[Data types in C refer to an extensive system used for declaring variables or functions of different types. The type of a variable determines how much space it occupies in the storage and how the bit pattern stored is interpreted. The following data types are supported by Arduino programming.]]></pText>
+    </PageText>
+      
+
+    <PageText>
+      <pText><![CDATA[
+      
+      <ol class="DecimalNumberClass">
+        <li>void - The void keyword is used only in function declarations. It indicates that the function is expected to return no information to the function from which it was called.</li>
+        <li>boolean - Boolean holds one of two values, true or false. Each boolean variable occupies one byte of memory.</li>
+        <li>shortcut used to create a new sketch.</li>
+        <li>char - A data type that takes up one byte of memory that stores a character value. Character literals are written in single quotes like ‘c’. For multiple characters called strings we use double quotes: “ABC”.</li>
+        <li>unsigned char - unsigned char is an unsigned data type that occupies one byte of memory. The unsigned char data type encodes numbers from 0 to 255.</li>
+        <li>byte - A byte stores an 8-bit unsigned number from 0 to 255.</li>
+        <li>int - Integers are the primary data-type for number storage. int stores a 16-bit (2- byte) value. This yields a range of -32,768 to 32,767 (minimum value of -2^15 and a maximum value of (2^15) - 1). The int size varies from board to board.</li>
+        <li>unsigned ints (unsigned integers) - They are the same as int in the way that they store a 2 byte value. Instead of storing negative numbers they only store positive values, yielding a useful range of 0 to 65,535 (2^16) - 1).</li>
+        <li>word - On the Uno and other ATMEGA based boards, a word stores a 16-bit unsigned number.</li>
+        <li>long - Long variables are extended size variables for number storage and store 32 bits (4 bytes) from -2,147,483,648 to 2,147,483,647.</li>
+        <li>unsigned long - unsigned long variables are extended size variables for number storage and store 32 bits (4 bytes). Unlike standard longs, unsigned longs will not store negative numbers, making their range from 0 to 4,294,967,295 (2^32 - 1).</li>
+        <li>short - A short is a 16-bit data-type. On all Arduinos a short stores a 16-bit (2-byte) value.</li>
+        <li>float - Data type for floating-point number is a number that has a decimal point. Floating-point numbers can be as large as 3.4028235E+38 and as low as 3.4028235E+38. They can store 32 bits (4 bytes) of information.</li>
+        <li>double - On the Uno and other ATMEGA based boards, double precision floating- point number occupies four bytes. That is, the double implementation is exactly the same as the float, with no gain in precision.</li>
+      </ol>
+      ]]></pText>
+    </PageText>
+
+
+  </PageData>
+</main>

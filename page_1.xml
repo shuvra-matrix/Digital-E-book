@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<main>
+  <PageData>
+	<MainHeading><![CDATA[]]></MainHeading>
+    <SubHeading><![CDATA[]]></SubHeading>
+    <PageText>
+      <pText><![CDATA[<b>6.1. Introduction</b>]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[Arduino is a prototype platform (open-source) based on an easy-to-use hardware and software. It consists of a circuit board, which can be programmed referred to as a microcontroller and ready-made software called Arduino IDE (Integrated Development Environment), which is used to write and upload the computer code to the physical board. There are different types of Arduino boards. They are]]></pText>
+    </PageText>
+     <PageText>
+      <pText>
+      <![CDATA[<ul class="ListClassDisc">
+        <li>Arduino boards based on ATMEGA328 microcontroller.</li>
+        <li>Arduino boards based on ATMEGA32U4 microcontroller.</li>
+        <li>Arduino boards based on ATMEGA2560 microcontroller.</li>
+        <li>Arduino boards based on AT91SAM3X8E microcontroller.</li>
+      </ul>
+      ]]></pText>
+    </PageText>
+      
+  </PageData>
+</main>

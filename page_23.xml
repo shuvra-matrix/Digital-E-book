@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<main>
+  <PageData>
+	<MainHeading><![CDATA[]]></MainHeading>
+    <SubHeading><![CDATA[]]></SubHeading>
+    <PageText>
+      <pText><![CDATA[<b>Traffic Control System</b>]]></pText>
+    </PageText>
+     <PageText>
+      <pText><![CDATA[<b>Requirement</b>]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[Arduino board, 3 different color LEDs, 330 ohm resistors and jumper wires.]]></pText>
+    </PageText>
+      <PageText>
+      <pText><![CDATA[<b>Connection</b>]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[
+      <ul class="ListClassCircle">
+        <li>Connect the positive terminals of the LEDs to the respective digital Output pins in the board assigned in the code.</li>
+        <li>Connect the negative terminals of the LED to the ground.</li>
+      </ul>
+      
+      ]]></pText>
+    </PageText>
+     <PageText>
+      <pText><![CDATA[<b>Sketch</b>]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[
+        <div class="CodeBox">
+            <div>// LED pins </div>
+            <div>int r=2; </div>
+            <div>int g=3; </div>
+            <div>int y=4;</div>
+            <div>void setup()</div>
+            <div>{ Serial.begin(9600); </div>
+            <div class="FourTabClass">pinMode(r,OUTPUT); </div>
+            <div class="FourTabClass">pinMode(g,OUTPUT); </div>
+            <div class="FourTabClass">pinMode(y,OUTPUT); </div>
+            <div class="FourTabClass">digitalWrite(r,LOW); </div>
+            <div class="FourTabClass">digitalWrite(g,LOW); </div>
+            <div class="FourTabClass">digitalWrite(y,LOW);</div>
+            <div>}</div>
+            <div>void traffic()</div>
+            <div>{</div>
+            <div>digitalWrite(g,HIGH); </div>
+            <div>Serial.println(“Green LED:ON,GO”);</div>
+            <div>//delay of 5 seconds </div>
+            <div>delay(5000); </div>
+            <div>digitalWrite(g,LOW); </div>
+            <div>digitalWrite(y,HIGH);</div>
+            <div>Serial.println(“Green LED:OFF,Yellow LED:ON,WAIT) </div>
+            <div>delay(5000);</div>
+            <div>digitalWrite(y,LOW); </div>
+            <div>digitalWrite(r,HIGH);</div>
+            <div>Serial.println(“Yellow LED:OFF, Red LED ON,STOP”); </div>
+            <div>delay(5000);</div>
+            <div>digitalWrite(r,LOW); </div>
+            <div>Serial.println(“ALL OFF”);</div>
+            <div>}</div>
+            <div>void loop()</div>
+            <div>{</div>
+            <div class="FourTabClass">traffic(); </div>
+            <div class="FourTabClass">delay(10000);</div>
+            <div>}</div>
+        
+        </div>
+      ]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[<b>Explanation</b>]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[Initially all the LEDs are turned off. The LEDs are turned on one at a time with a delay of 5 seconds. The message is displayed accordingly to the serial port using the function Serial. ]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[<div class="CodeBox"><div>println().</div></div>]]></pText>
+    </PageText>
+  </PageData>
+</main>

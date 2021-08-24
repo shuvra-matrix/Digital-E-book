@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<main>
+  <PageData>
+	<MainHeading><![CDATA[]]></MainHeading>
+    <SubHeading><![CDATA[]]></SubHeading>
+    <PageText>
+      <pText><![CDATA[<b>Input-Output Functions</b>]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[The pins on the Arduino board can be configured as either inputs or outputs using the <b>pinMode()</b> function. Arduino pins are by default configured as inputs, so they do not need to be explicitly declared as inputs with <b>pinMode()</b> when we are using them as inputs. Pins configured as INPUT are said to be in a high-impedance state. Pins configured as OUTPUT with pinMode() are said to be in a low-impedance state. The syntax of <b>pinMode()</b> function is as follows.]]></pText>
+    </PageText>
+     <PageText>
+      <pText><![CDATA[
+      <div class="CodeBox">
+      <div>void setup () { </div>
+      <div class="FourTabClass">pinMode(pin,mode);</div>
+      <div>}</div>
+      </div>
+      ]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[where pin is the pin number on the Arduino board that we wish to set to a mode and mode can be either INPUT or OUTPUT.]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[<b>digitalWrite() - </b>Writes a HIGH or LOW value to a digital pin.]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[<b>analogRead() - </b>Reads from the analog input pin i.e., voltage applied across the pin.]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[<b>Example Program for Blinking LED</b>]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[<b>Requirement</b>]]></pText>
+    </PageText>
+     <PageText>
+      <pText><![CDATA[
+      <ul class="ListClassCircle">
+      <li>Arduino controller board, USB connector, bread board, LED, 1.4 Kohm resistor, connecting wires, Arduino IDE.</li>
+      </ul>
+      ]]></pText>
+    </PageText>
+     <PageText>
+      <pText><![CDATA[<b>Connection</b>]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[
+      <ul class="ListClassCircle">
+        <li>Connect the LED to the Arduino using the bread board and the connecting wires.</li>
+        <li>Connect the Arduino board to the PC using the USB connector.</li>
+        <li>Select the board type and port.</li>
+        <li>Write the sketch in the editor, verify and upload.</li>
+        <li>Connect the positive terminal of the LED to digital pin 12 and the negative terminal to the ground pin (GND) of Arduino board.</li>
+      </ul>
+      ]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[<b>Sketch</b>]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[
+        <div class="CodeBox">
+            <div>void setup(){</div>
+            <div>pinMode(12,OUTPUT); //Set the pin mode</div>
+            <div>}</div>
+            <div>void loop(){</div>
+            <div>digitalWrite(12, HIGH); // Turn on the LED </div>
+            <div>delay(1000);</div>
+            <div>digitalWrite(12, LOW); //Turn of the LED </div>
+            <div>delay(1000);</div>
+            <div>}</div>
+        
+        </div>
+      ]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[<b>Explanation</b>]]></pText>
+    </PageText>
+     <PageText>
+      <pText><![CDATA[<b>Initially the pin mode is set as OUTPUT which is connected to the LED, pin 12 in this case. The digitalWrite() function is used to set the output as HIGH and LOW. The function delay() is used to specify the delay between HIGH-LOW transition of the output. The next procedure is to connect the board to the PC. Select the port and board type from Arduino IDE. Verify the code and upload. We can notice the TX-RV LED in the board starts flashing as the code is uploaded.</b>]]></pText>
+    </PageText>
+  </PageData>
+</main>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<main>
+  <PageData>
+	<MainHeading><![CDATA[]]></MainHeading>
+    <SubHeading><![CDATA[]]></SubHeading>
+    <PageText>
+      <pText><![CDATA[<b>	Interrupts</b>]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[ An external signal for which system blocks the current running process to process that signal is called an interrupt. There are two types of interrupts.]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[ <b>Hardware Interrupts − </b>They occur in response to an external event, such as an external interrupt pin going high or low.]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[ <b>Software Interrupts − </b>They occur in response to an instruction sent in software. ]]></pText>
+    </PageText>
+      <PageText>
+      <pText><![CDATA[ Interrupts are very useful in Arduino programs as it helps in solving timing problems. A good application of an interrupt is reading a rotary encoder or observing a user input. Generally, an Interrupt Service Routine (ISR) should be as short and fast as possible. If our sketch uses multiple ISRs, only one can run at a time. Other interrupts will be executed after the current one finishes in an order that depends on the priority they have. Typically, global variables are used to pass data between an ISR and the main program. To make sure variables shared between an ISR and the main program is updated correctly, declare them as volatile. The only type of interrupt that the “Arduino language” supports is the attachInterrupt() function. The format of attachInterrupt() function is as follows.]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[
+      <div class="CodeBox">
+        <div>attachInterrupt(digitalPinToInterrupt(pin),ISR,mode);</div>
+        <div>digitalPinToInterrupt(pin): change the actual digital pin to the specific interrupt number.</div>
+        <div>pin: the pin number</div>
+        <div>ISR: the ISR to call when the interrupt occurs</div>
+        <div>mode: defines when the interrupt should be triggered.</div>
+      </div>
+      ]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[The following three constants are predefined as valid values for the mode of the pin.]]></pText>
+    </PageText>
+     <PageText>
+      <pText><![CDATA[
+      <ol class="LowerAlphaClass">
+        <li>LOW to trigger the interrupt whenever the pin is low.</li>
+        <li>CHANGE to trigger the interrupt whenever the pin changes value.</li>
+        <li>FALLING whenever the pin goes from high to low.</li>
+      </ol>
+        ]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[Following program illustrates this.]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[
+      <div class="CodeBox">
+        <div>int pin = 2; //define interrupt pin to 2</div>
+        <>volatile int state = LOW; // To make sure variables shared between an ISR //the main program are updated correctly,declare them as volatile.</div>
+        <div>void setup() {</div>
+        <div class="FourTabClass">pinMode(13, OUTPUT); //set pin 13 as output </div>
+        <div class="FourTabClass">attachInterrupt(digitalPinToInterrupt(pin), blink, CHANGE);</div>
+        <div class="FourTabClass">//interrupt at pin 2 blink ISR when pin to change the value</div>
+        <div>}</div>
+        <div>void loop() {</div>
+        <div class="FourTabClass">digitalWrite(13, state); //pin 13 equal the state value</div>
+        <div>}</div>
+        <div>void blink() {</div>
+        <div class="FourTabClass">//ISR function</div>
+        <div class="FourTabClass">state = !state; //toggle the state when the interrupt occurs</div>
+        <div>}</div>
+      </div>
+      ]]></pText>
+    </PageText>
+
+
+  </PageData>
+</main>

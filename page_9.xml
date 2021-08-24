@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<main>
+  <PageData>
+	<MainHeading><![CDATA[]]></MainHeading>
+    <SubHeading><![CDATA[]]></SubHeading>
+    <PageText>
+      <pText><![CDATA[<b>	Operators</b>]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[An operator is a symbol that tells the compiler to perform specific mathematical or logical functions. Arduino supports following types of operators.]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[<b>Arithmetic Operators:</b> addition (+), subtraction (-), multiplication (*), division (/), modulus(%) and assignment(=).]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[<b>Comparison Operators:</b> Logical equal to (==), not equal to (!=), less than (<), less than or equal to (<=), greater than ( >) and greater than or equal to (>=).]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[<b>Boolean Operators:</b> Logical AND (&&), Logical OR (||) and Logical NOT(!)]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[<b>Bitwise Operators:</b> Bitwise AND (&), Bitwise OR (|), Bitwise Exclusive OR (^), Bitwise NOT (~), Bitwise Left Shift (<<) and Bitwise Right Shift (>>)]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[<b>Compound Operators:</b> Increment (++), Decrement (– –) and Shorthand (+=, –=, *=, /=, %=,|=, &=)]]></pText>
+    </PageText>
+  </PageData>
+</main>

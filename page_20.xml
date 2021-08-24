@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<main>
+  <PageData>
+	<MainHeading><![CDATA[]]></MainHeading>
+    <SubHeading><![CDATA[]]></SubHeading>
+    <PageText>
+      <pText><![CDATA[<b>	Random Numbers</b>]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[To generate random numbers, we can use Arduino random number functions. We have two functions <b>(a) randomSeed(seed) (b) random()</b>.]]></pText>
+    </PageText>
+       <PageText>
+      <pText><![CDATA[<b>randomSeed (seed): </b>The function randomSeed(seed) resets Arduino’s pseudorandom number generator. Although the distribution of the numbers returned by random() is essentially random, the sequence is predictable. We should reset the generator to some random value. If we have an unconnected analog pin, it might pick up random noise from the surrounding environment. These may be radio waves, cosmic rays, electromagnetic interference from cell phones, fluorescent lights and so on.]]></pText>
+    </PageText>
+     <PageText>
+      <pText><![CDATA[<b>Example</b>]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[<div class="CodeBox">
+        <div>randomSeed(analogRead(5)); // randomize using noise from analog pin 5</div>
+      </div>]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[<b>random( ): </b>The random function generates pseudo-random numbers. Following is the syntax.]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[<div class="CodeBox">
+        <div>long random(max) // it generate random numbers from 0 to max</div>
+        <div>long random(min,max) // it generate random numbers from min to max</div>
+      </div>]]></pText>
+    </PageText>
+  </PageData>
+</main>

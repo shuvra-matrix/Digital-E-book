@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<main>
+  <PageData>
+	<MainHeading><![CDATA[]]></MainHeading>
+    <SubHeading><![CDATA[]]></SubHeading>
+    <PageText>
+      <pText><![CDATA[<b>	Character Functions</b>]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[All data is entered into computers as characters, which includes letters, digits and various special symbols. The character-handling library includes several functions that perform useful tests and manipulations of character data. The following are the functions of the character- handling library. When using functions from the character-handling library, it is necessary to include the <cctype> header.]]></pText>
+    </PageText>
+      <PageText>
+      <pText><![CDATA[
+      <ol class="DecimalNumberClass">
+        <li>int isdigit( int c ) - Returns 1 if c is a digit and 0 otherwise.</li>
+        <li>int isalpha( int c ) - Returns 1 if c is a letter and 0 otherwise.</li>
+        <li>int isalnum( int c ) - Returns 1 if c is a digit or a letter and 0 otherwise.</li>
+        <li>int isxdigit( int c ) - Returns 1 if c is a hexadecimal digit character and 0 otherwise.</li>
+        <li>int islower( int c ) - Returns 1 if c is a lowercase letter and 0 otherwise.</li>
+        <li>int isupper( int c ) - Returns 1 if c is an uppercase letter, 0 otherwise.</li>
+        <li>int isspace( int c ) - Returns 1 if c is a white-space character—newline (‘\n’), space</li>
+      </ol>
+      ]]></pText>
+    </PageText>
+
+     <PageText>
+      <pText><![CDATA[(‘ ‘), form feed (‘\f’), carriage return (‘\r’), horizontal tab (‘\t’), or vertical tab (‘\v’) and 0 otherwise.]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[
+      <ol class="DecimalNumberClass">
+        <li>int iscntrl( int c ) - Returns 1 if c is a control character, such as newline (‘\n’), form feed (‘\f’), carriage return (‘\r’), horizontal tab (‘\t’), vertical tab (‘\v’), alert (‘\a’), or backspace (‘\b’)—and 0 otherwise.</li>
+        <li>int ispunct( int c ) - Returns 1 if c is a printing character other than a space, a digit, or a letter and 0 otherwise.</li>
+        <li>int isprint( int c ) - Returns 1 if c is a printing character including space (‘ ‘) and 0 otherwise.</li>
+        <li>int isgraph( int c ) - Returns 1 if c is a printing character other than space (‘ ‘) and 0 otherwise.</li>
+      </ol>
+      ]]></pText>
+    </PageText>
+  </PageData>
+</main>

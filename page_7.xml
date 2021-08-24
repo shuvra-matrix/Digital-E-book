@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<main>
+  <PageData>
+	<MainHeading><![CDATA[]]></MainHeading>
+    <SubHeading><![CDATA[]]></SubHeading>
+    <PageText>
+      <pText><![CDATA[<b>	Variables</b>]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[A variable is a value that can change, depending on conditions or on information passed to the program. Arduino uses C programming language. Variables use a property called scope. A scope is a region of the program and there are three places where variables can be declared. They are]]></pText>
+    </PageText>
+
+     <PageText>
+      <pText><![CDATA[
+      
+      <ol class="LowerAlphaClass">
+        <li>Variables declared inside a function or a block is called <b>local variables.</b></li>
+        <li>Variables used in the definition of function parameters are called <b>formal parameters.</b></li>
+        <li>Variables declared outside of all functions are called <b>global variables.</b></li>
+      </ol>
+      
+      ]]></pText>
+    </PageText>
+
+    <PageText>
+      <pText><![CDATA[<b>Local Variables:</b> Variables that are declared inside a function or block are local variables. They can be used only by the statements that are inside that function or block of code. Local variables are not known to function outside.]]></pText>
+    </PageText>
+
+     <PageText>
+      <pText><![CDATA[<b>Global Variables:</b> Global variables are defined outside of all the functions, usually at the top of the program. The global variables will hold their value throughout the life-time of the program. A global variable can be accessed by any function. A global variable is available for use throughout the entire program after its declaration. Following program uses global and local variables.]]></pText>
+    </PageText>
+
+    <PageText>
+      <pText><![CDATA[Program]]></pText>
+    </PageText>
+
+     <PageText>
+      <pText><![CDATA[
+      
+      <div class="CodeBox">
+      
+        <div>float c = 0; Global variable declaration </div>
+        <div>void setup ()   {</div>
+
+                       <div class="SixTabClass"> }</div>
+       <div> void loop ()  {</div>
+           <div class="FourTabClass"> int z; Local variable declaration </div>
+           <div class="FourTabClass"> z = 10;</div>
+      <div>  }</div>
+      </div>
+      
+      
+      ]]></pText>
+    </PageText>
+      
+  </PageData>
+</main>

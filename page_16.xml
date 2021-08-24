@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<main>
+  <PageData>
+	<MainHeading><![CDATA[]]></MainHeading>
+    <SubHeading><![CDATA[]]></SubHeading>
+    <PageText>
+      <pText><![CDATA[<b>	Function Libraries</b>]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[There are several function libraries in Arduino that contains Input-Output functions, character functions, math library and trigonometric functions. We will see one by one.]]></pText>
+    </PageText>
+  </PageData>
+</main>

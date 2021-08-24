@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<main>
+  <PageData>
+	<MainHeading><![CDATA[]]></MainHeading>
+    <SubHeading><![CDATA[]]></SubHeading>
+    <PageText>
+      <pText><![CDATA[<b>	Conclusion</b>]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[ This Chapter explains the programming with Arduino. The features of Arduino, components of Arduino board, Arduino IDE are illustrated in detail with diagrams. Various program elements like structure of an Arduino programs, variables, data types, operators, decision making statements, loops, functions, arrays, String objects and time functions. Function libraries supported by Arduino including Input-Output functions, character functions and math library are explained. Random numbers and interrupts in Arduino are illustrated. Case studies of Arduino for Traffic Control System, integration of DHT sensor with Arduino and Servo motor interfaced with Arduino are explained with Arduino sketch.]]></pText>
+    </PageText>
+      
+  </PageData>
+</main>

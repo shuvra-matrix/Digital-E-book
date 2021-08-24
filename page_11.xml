@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<main>
+  <PageData>
+	<MainHeading><![CDATA[]]></MainHeading>
+    <SubHeading><![CDATA[]]></SubHeading>
+    <PageText>
+      <pText><![CDATA[<b>	Loops</b>]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[A loop statement allows executing a statement or group of statements multiple times. Following are the loops supported by Arduino.]]></pText>
+    </PageText>
+
+    <PageText>
+      <pText><![CDATA[a.	<b>for loop -</b> Following is the syntax of for loop.]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[
+       <div class="CodeBox">
+        <div>for(initialization; termination condition; increment or decrement) {</div>
+        <div class="FourTabClass">// statement block}</div>
+      </div>
+      ]]></pText>
+    </PageText>
+
+    <PageText>
+      <pText><![CDATA[<b>Example Program</b>]>]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[
+       <div class="CodeBox">
+        <div>for(i=1;i<=10;i++) {</div>
+        <div class="FourTabClass">//statements block will executed 10 times}</div>
+      </div>
+      ]]></pText>
+    </PageText>
+
+    <PageText>
+      <pText><![CDATA[b.    <b>while loop -</b> while loops will iterate continuously and infinitely, until the expression inside the parenthesis () becomes false. The syntax of while loop is as follows.]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[
+       <div class="CodeBox">
+        <div>while(expression) { </div>
+        <div class="FourTabClass">block of statements;}</div>
+      </div>
+      ]]></pText>
+    </PageText>
+
+    <PageText>
+      <pText><![CDATA[<b>Example Program</b>]>]]></pText>
+    </PageText>
+     <PageText>
+      <pText><![CDATA[
+       <div class="CodeBox">
+        <div>n=10;</div>
+        <div>i=1;</div>
+        <div>while(i<=n) {</div>
+        <div>i++ //statements block will executed 10 times</div>
+        <div>}</div>
+      </div>
+      ]]></pText>
+    </PageText>
+
+    <PageText>
+      <pText><![CDATA[c.    <b>do..while loop - </b>The do…while loop is similar to the while loop. In the while loop, the loop-continuation condition is tested at the beginning of the loop before performed the body of the loop. The do…while statement tests the loop-continuation condition after performed the loop body. Therefore, the loop body will be executed at least once. Syntax of do..while is given below.]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[
+       <div class="CodeBox">
+        <div>do {</div>
+        <div class="FourTabClass">block of statements;</div>
+        <div class="FourTabClass">}</div>
+        <div>while (expression);</div>
+      </div>
+      ]]></pText>
+    </PageText>
+
+     <PageText>
+      <pText><![CDATA[<b>Example Program</b>]>]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[
+       <div class="CodeBox">
+        <div>n=10;</div>
+        <div>i=1;</div>
+        <div>do{</div>
+        <div>i++ //statements block will executed 10 times</div>
+        <div>} while(i<=n);</div>
+      </div>
+      ]]></pText>
+    </PageText>
+
+    <PageText>
+      <pText><![CDATA[d.    <b>nested loop – </b>Arduino supports to use one loop inside another loop. The following shows the syntax of nested loop.]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[
+       <div class="CodeBox">
+        <div>for ( initialize ;control; increment or decrement) {</div>
+        <div>// statement block</div>
+        <div>// statement block</div>
+        <div class="FourTabClass">// statement block</div>
+        <div>}</div>
+        <div>}</div>
+      </div>
+      ]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[<b>Example Program</b>]>]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[
+       <div class="CodeBox">
+        <div>for(i=1;i<=10;i++) {</div>
+        <div>//statements block will executed 10 times </div>
+        <div>for(j=0;j<=99;j++) {</div>
+        <div class="FourTabClass">//statements block will executed 100 times</div>
+        <div class="FourTabClass">}</div>
+        <div>}</div>
+      </div>
+      ]]></pText>
+    </PageText>
+
+    <PageText>
+      <pText><![CDATA[e.    <b>infinite loop -</b>It is the loop having no terminating condition, so the loop becomes infinite. Following is the syntax for infinite loop used with for, while and do…while loops.]]></pText>
+    </PageText>
+     <PageText>
+      <pText><![CDATA[<b>Using for loop</b>]>]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[
+       <div class="CodeBox">
+        <div>for (;;) {</div>
+        <div class="FourTabClass">// statement block</div>
+        <div>}</div>
+      </div>
+      ]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[<b>Using while loop</b>]>]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[
+       <div class="CodeBox">
+        <div>while(1) {</div>
+        <div class="FourTabClass">// statement block</div>
+        <div>}</div>
+      </div>
+      ]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[<b>Using do…while loop</b>]>]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[
+       <div class="CodeBox">
+        <div>do {</div>
+        <div class="FourTabClass">// statement block</div>
+        <div>}</div>
+        <div>while(1);</div>
+      </div>
+      ]]></pText>
+    </PageText>
+  </PageData>
+</main>

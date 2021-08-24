@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<main>
+  <PageData>
+	<MainHeading><![CDATA[]]></MainHeading>
+    <SubHeading><![CDATA[]]></SubHeading>
+    <PageText>
+      <pText><![CDATA[<b>	Case Studies</b>]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[In this section, we will discuss some practical applications where Arduino board is used. Three case studies are explained – traffic control system, Digital Humidity and Temperature sensor used with Arduino and servo motor interfaced with Arduino.]]></pText>
+    </PageText>
+  </PageData>
+</main>

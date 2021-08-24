@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<main>
+  <PageData>
+	<MainHeading><![CDATA[]]></MainHeading>
+    <SubHeading><![CDATA[]]></SubHeading>
+    <PageText>
+      <pText><![CDATA[<b>	Math Library</b>]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[We need to include the math.h header file for using mathematical functions. Following are the mathematical functions included in math library.]]></pText>
+    </PageText>
+      <PageText>
+      <pText><![CDATA[
+      <ul class="ListClassCircle">
+        <li>cos(double radian);</li>
+        <li>sin(double radian);</li>
+        <li>tan(double radian);</li>
+        <li>fabs(double val);</li>
+        <li>fmod(double val1, double val2);</li>
+        <li>exp(double val);</li>
+        <li>log(double val);</li>
+        <li>log10(double val);</li>
+        <li>square(double val);</li>
+        <li>pow(double base, double power);</li>
+      </ul>
+      ]]></pText>
+    </PageText>
+  </PageData>
+</main>

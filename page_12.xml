@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<main>
+  <PageData>
+	<MainHeading><![CDATA[]]></MainHeading>
+    <SubHeading><![CDATA[]]></SubHeading>
+    <PageText>
+      <pText><![CDATA[<b>	Functions</b>]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[There are two required functions in an Arduino sketch or a program i.e. setup () and loop(). Other functions must be created outside the brackets of these two functions. The most common syntax to define a function is as follows.]]></pText>
+    </PageText>
+    <PageText>
+        <pText><![CDATA[
+        <div class="CodeBox">
+            <div>return_type function_name (argument1, argument2….argumentn)</div>
+            <div>{</div>
+            <div>statements;</div>
+            <div>}</div>
+        </div>
+        ]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[<b>Function Declaration</b>]]></pText>
+    </PageText>
+     <PageText>
+      <pText><![CDATA[A function is declared outside any other functions, above or below the loop function. We can declare the function in two different ways. The first method just declares the function above the loop function. The following example shows the demonstration of the function declaration using the first method.]]></pText>
+    </PageText>
+      <PageText>
+      <pText><![CDATA[<b>Example Program</b>]]></pText>
+    </PageText>
+     <PageText>
+      <pText><![CDATA[
+      
+      <div class="CodeBox">
+        <div>int sum(int x, int y) // function declaration { </div>
+        <div class="FourTabClass">int z = 0;</div>
+        <div class="FourTabClass">z = x+y ;</div>
+        <div class="FourTabClass">return z; // return the value</div>
+        <div>}</div>
+        <div>void setup () {</div>
+        <div class="FourTabClass">statements // group of statements</div>
+        <div>}</div>
+        <div>void loop () {</div>
+        <div class="FourTabClass">int result = 0;</div>
+        <div class="FourTabClass">result = sum(2,3); // function call</div>
+        <div>}</div>
+      </div>
+
+      ]]></pText>
+    </PageText>
+      <PageText>
+      <pText><![CDATA[ The second method is just writing the part of the function called a function prototype above the loop function. Function prototype must be followed by a semicolon ( ; ). Function definition is done below the loop function. The function body consists of function return type, function name and function argument type.]]></pText>
+    </PageText>
+
+      <PageText>
+      <pText><![CDATA[<b>Example Program</b>]]></pText>
+    </PageText>
+     <PageText>
+      <pText><![CDATA[
+      
+      <div class="CodeBox">
+        <div>int sum(int,int ); // function prototype </div>
+        <div>void setup () {</div>
+        <div class="FourTabClass">statements // group of statements</div>
+        <div>}</div>
+        <div>void loop () {</div>
+        <div class="FourTabClass">int result = 0;</div>
+        <div class="FourTabClass">result = sum(2,3); // function call</div>
+        <div>}</div>
+        <div>int sum(int x,int y) // function declaration { </div>
+        <div class="FourTabClass">int z = 0;</div>
+        <div class="FourTabClass">z = x+y ;</div>
+        <div class="FourTabClass">return z; // return the value</div>
+        <div>}</div>
+      </div>
+
+      ]]></pText>
+    </PageText>
+  </PageData>
+</main>

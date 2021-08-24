@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<main>
+  <PageData>
+	<MainHeading><![CDATA[]]></MainHeading>
+    <SubHeading><![CDATA[]]></SubHeading>
+    <PageText>
+      <pText><![CDATA[<b>	Arrays</b>]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[An array is a consecutive group of memory locations that are of the same type. To refer to a particular location or element in the array, we specify the name of the array and the position number of the particular element in the array. Arrays occupy space in memory. The index of an array starts from 0. An array can be declared of the form as given below.]]></pText>
+    </PageText>
+      <PageText>
+      <pText><![CDATA[
+        <div class="CodeBox">
+        <div>type arrayName [arraySize];</div>
+        </div>
+      ]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[The arraySize must be an integer constant greater than zero. For example, to tell the compiler to reserve 10 elements for integer array we use the following declaration.]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[
+        <div class="CodeBox">
+        <div>int c[10]; // c is an array of 10 integers</div>
+        </div>
+      ]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[We can declare an array as well as initialize it using the following forms.]]></pText>
+    </PageText>
+     <PageText>
+      <pText><![CDATA[
+        <div class="CodeBox">
+        <div>int a[]={1,2,3,4,5}</div>
+        <div>int b[5]={1,2,3}</div>
+        </div>
+      ]]></pText>
+    </PageText>
+     <PageText>
+      <pText><![CDATA[Multidimensional arrays are arrays with two dimensions (i.e., subscripts) often represent tables of values consisting of information arranged in rows and columns. To identify a particular array element, we must specify two subscripts. By convention, the first identifies the element’s row and the second identifies the element’s column. The basic syntax for declaring a multidimensional array is as follows.]]></pText>
+    </PageText>
+     <PageText>
+      <pText><![CDATA[type arrayName[rowSize][colSize];]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[The rowSize and colSize must be an integer constant greater than zero. For example, to tell the compiler to reserve 25 elements for integer two dimensional array, we use the following declaration.]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[int c[5][5]; // c is a two-dimensional array of 25 integers]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[A multidimensional array can be initialized in its declaration much like a one-dimensional array. For example, a two-dimensional array b with values 1 and 2 in its row 0 elements and values 3 and 4 in its row 1 elements could be declared and initialized as follows.]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[
+        <div class="CodeBox">
+            <div>int b[2][2] = {{1,2},{3,4}};</div>
+        </div>
+      ]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[The values are grouped by row in braces. Therefore, 1 and 2 initialize b[0][0] and b[0][1], respectively and 3 and 4 initialize b[1][0] and b[1][1] respectively.]]></pText>
+    </PageText>
+  </PageData>
+</main>

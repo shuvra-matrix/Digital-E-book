@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<main>
+  <PageData>
+	<MainHeading><![CDATA[]]></MainHeading>
+    <SubHeading><![CDATA[]]></SubHeading>
+    <PageText>
+      <pText><![CDATA[<b>	String Objects</b>]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[Strings are used to store text. There are two types of strings in Arduino programming.]]></pText>
+    </PageText>
+      <PageText>
+      <pText><![CDATA[
+      <ol class="LowerAlphaClass">
+      <li>Array of characters, which are the same as the strings used in C programming.</li>
+      <li>The Arduino String, which lets us use a string object in a sketch.</li>
+      </ol>
+      ]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[A string is a special array of characters that has one extra element at the end of the string, which always has the value of 0 (zero). This is known as a “null terminated string”. Example for declaration of array of characters is given below. The declaration of array of objects is as given below.]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[
+      <div class="CodeBox">
+      <div>char s[]=”abcd”;</div>
+      </div>
+      ]]></pText>
+       </PageText>
+       <PageText>
+      <pText><![CDATA[It can also be declared as follows.]]></pText>
+       </PageText>
+        <PageText>
+            <pText><![CDATA[
+            <div class="CodeBox">
+            <div>char s[4];</div>
+            <div>s[0]=’a’;</div>
+            <div>s[1]=’b’;</div>
+            <div>s[2]=’c’;</div>
+            <div>s[3]=’d’;</div>
+            </div>
+            ]]></pText>
+    </PageText>
+     <PageText>
+      <pText><![CDATA[A string object can be declared as follows. Here s is an object of class String.]]></pText>
+    </PageText>
+
+     <PageText>
+            <pText><![CDATA[
+            <div class="CodeBox">
+            <div>String s=”abc”;</div>
+            </div>
+            ]]></pText>
+    </PageText>
+     <PageText>
+      <pText><![CDATA[s.toUpperCase(): Changes all the characters of string s to uppercase.]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[s.toLowerCase():  Changes all the characters of string s to lowercase.]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[s.length(): Returns the length of the string.]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[s.replace(s1,s2): If s1 is the substring of s, it will be replaced by s2.]]></pText>
+    </PageText>
+    
+  </PageData>
+</main>

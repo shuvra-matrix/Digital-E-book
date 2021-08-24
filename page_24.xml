@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<main>
+  <PageData>
+	<MainHeading><![CDATA[]]></MainHeading>
+    <SubHeading><![CDATA[]]></SubHeading>
+    <PageText>
+      <pText><![CDATA[<b>	DHT Sensor with Arduino</b>]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[In this example, we will see the integration of sensors with Arduino board. Sensors as we know are electronic elements which sense the data. It converts physical quantity/measurements into electrical signals. They can be analog or digital. In this example, we have used Digital Humidity and Temperature sensor (DHT). This sensor has four pins PIN 1, 2, 3, 4 (from left to right). Following are the pin descriptions.]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[PIN 1 – 3.3 v to 5v power supply ]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[PIN 2 - data ]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[PIN 3 – null ]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[PIN 4 – Ground ]]></pText>
+    </PageText>
+     <PageText>
+      <pText><![CDATA[Arduino supports a special library DHT for DHT11 and DHT22 sensors. This  provides function to read the temperature (dht.readTemperature()) and humidity (dht. readHumidity) values from the data pin.]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[<b>Connection</b>]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[
+      <ul class="ListClassCircle">
+        <li>Connect Pin 1 of the DHT to the 3.3v supply pin on the board.</li>
+        <li>Data pin (Pin 2) can be connected to any digital pin. Here it is 12.</li>
+        <li>Connect Pin 4 to the ground (GND) pin of the board.</li>
+      </ul>
+      ]]></pText>
+    </PageText>
+     <PageText>
+      <pText><![CDATA[<b>Sketch</b>]]></pText>
+    </PageText>
+     <PageText>
+      <pText><![CDATA[<b>We need to install the DHT sensor library. Go to Sketch →Include Library→ Manage Library. Search for DHT sensor. Select the “DHT sensor library” and install it.</b>]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[
+      <div class="CodeBox">
+        <div>#include<DHT.h></div>
+        <div>DHT dht(8,DHT22);//Initialize DHT sensor </div>
+        <div>float humidity;//Stores humidity value. </div>
+        <div>float temperature;//Stores temperature. </div>
+        <div>void setup()</div>
+        <div>{Serial.begin(9600); </div>
+        <div class="FourTabClass">dht.begin();</div>
+        <div>}</div>
+        <div>void loop(){</div>
+        <div>//Read data from the sensor and store it to variables humidity and // </div>
+        <div>temperature</div>
+        <div>humidity=dht.readHumidity(); </div>
+        <div>temperature=dht.readTemperature;</div>
+        <div>//Print temperature and humidity values to serial monitor. </div>
+        <div>Serial.print(“Humidity: “);</div>
+        <div>Serial.print(humidity); </div>
+        <div>Serial.print(“%, Temperature: “); </div>
+        <div>Serial.print(temperature); </div>
+        <div>Serial.println(“Celsius”); </div>
+        <div>delay(2000);//Delay of 2 seconds</div>
+      </div>
+      ]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[Connect the board to the PC. Select the port and board type. Verify and upload the code.]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[<b>Output</b>]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[The readings are printed at a delay of 2 seconds as specified by the <b>delay()</b> function.]]></pText>
+    </PageText>
+  </PageData>
+</main>

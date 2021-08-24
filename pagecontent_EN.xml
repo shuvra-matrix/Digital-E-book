@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<main>
+  <tableofcontent>Detailed Table of Contents</tableofcontent>
+  <MainBookName>Internet of Things</MainBookName>
+  <Topics>       
+    <Content id="1" HeaderContant="6. Programming with Arduino"><![CDATA[6.1._ Introduction]]></Content>
+    <Path><![CDATA[page_1.xml]]></Path>
+  </Topics>
+  <Topics>
+    <Content HeaderContant=""><![CDATA[6.2._ Features of Arduino]]></Content>
+    <Path><![CDATA[page_2.xml]]></Path>
+  </Topics> 
+  <Topics>
+    <Content HeaderContant=""><![CDATA[6.3._ Components of Arduino Board]]></Content>
+    <Path><![CDATA[page_3.xml]]></Path>
+  </Topics>
+  <Topics>
+    <Content HeaderContant=""><![CDATA[6.4._ Arduino IDE]]></Content>
+    <Path><![CDATA[page_4.xml]]></Path>
+  </Topics>
+  <Topics>
+    <Content HeaderContant=""><![CDATA[6.5._ Program Elements]]></Content>
+    <Path><![CDATA[page_5.xml]]></Path>
+  </Topics>
+  <Topics>
+    <Content HeaderContant=""><![CDATA[6.5.1._ Program Structure]]></Content>
+    <Path><![CDATA[page_6.xml]]></Path>
+  </Topics>
+  <Topics>
+    <Content HeaderContant=""><![CDATA[6.5.2._ Variables]]></Content>
+    <Path><![CDATA[page_7.xml]]></Path>
+  </Topics>
+  <Topics>
+    <Content HeaderContant=""><![CDATA[6.5.3._ Data Types]]></Content>
+    <Path><![CDATA[page_8.xml]]></Path>
+  </Topics>
+  <Topics>
+    <Content HeaderContant=""><![CDATA[6.5.4._ Operators]]></Content>
+    <Path><![CDATA[page_9.xml]]></Path>
+  </Topics>
+  <Topics>
+    <Content HeaderContant=""><![CDATA[6.5.5._ Decision Making]]></Content>
+    <Path><![CDATA[page_10.xml]]></Path>
+  </Topics>
+   <Topics>
+    <Content HeaderContant=""><![CDATA[6.5.6._ Loops]]></Content>
+    <Path><![CDATA[page_11.xml]]></Path>
+  </Topics>
+   <Topics>
+    <Content HeaderContant=""><![CDATA[6.5.7._ Functions]]></Content>
+    <Path><![CDATA[page_12.xml]]></Path>
+  </Topics>
+   <Topics>
+    <Content HeaderContant=""><![CDATA[6.5.8._ Arrays]]></Content>
+    <Path><![CDATA[page_13.xml]]></Path>
+  </Topics>
+  <Topics>
+    <Content HeaderContant=""><![CDATA[6.5.9._ String Objects]]></Content>
+    <Path><![CDATA[page_14.xml]]></Path>
+  </Topics>
+  <Topics>
+    <Content HeaderContant=""><![CDATA[6.5.10._ Time]]></Content>
+    <Path><![CDATA[page_15.xml]]></Path>
+  </Topics>
+    <Topics>
+    <Content HeaderContant=""><![CDATA[6.6._	Function	Libraries]]></Content>
+    <Path><![CDATA[page_16.xml]]></Path>
+  </Topics>
+   <Topics>
+    <Content HeaderContant=""><![CDATA[6.6.1._ Input-Output Functions]]></Content>
+    <Path><![CDATA[page_17.xml]]></Path>
+  </Topics>
+  <Topics>
+    <Content HeaderContant=""><![CDATA[6.6.2._ Character Functions]]></Content>
+    <Path><![CDATA[page_18.xml]]></Path>
+  </Topics>
+  <Topics>
+    <Content HeaderContant=""><![CDATA[6.6.3._ Math Library]]></Content>
+    <Path><![CDATA[page_19.xml]]></Path>
+  </Topics>
+  <Topics>
+    <Content HeaderContant=""><![CDATA[6.7._ Random Numbers]]></Content>
+    <Path><![CDATA[page_20.xml]]></Path>
+  </Topics>
+  <Topics>
+    <Content HeaderContant=""><![CDATA[6.8._ Interrupts]]></Content>
+    <Path><![CDATA[page_21.xml]]></Path>
+  </Topics>
+  <Topics>
+    <Content HeaderContant=""><![CDATA[6.9._ Case Studies]]></Content>
+    <Path><![CDATA[page_22.xml]]></Path>
+  </Topics>
+  <Topics>
+    <Content HeaderContant=""><![CDATA[6.9.1._ Traffic Control System]]></Content>
+    <Path><![CDATA[page_23.xml]]></Path>
+  </Topics> 
+  <Topics>
+    <Content HeaderContant=""><![CDATA[6.9.2._ DHT Sensor with Arduino]]></Content>
+    <Path><![CDATA[page_24.xml]]></Path>
+  </Topics> 
+  <Topics>
+    <Content HeaderContant=""><![CDATA[6.9.3._ Servo Motor Interfaced with Arduino]]></Content>
+    <Path><![CDATA[page_25.xml]]></Path>
+  </Topics>
+  <Topics>
+    <Content HeaderContant=""><![CDATA[6.10._ Conclusion]]></Content>
+    <Path><![CDATA[page_26.xml]]></Path>
+  </Topics>           
+</main>

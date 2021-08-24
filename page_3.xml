@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<main>
+  <PageData>
+	<MainHeading><![CDATA[]]></MainHeading>
+    <SubHeading><![CDATA[]]></SubHeading>
+   
+
+    <PageText>
+      <pText><![CDATA[<b>Components of Arduino Board</b>]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[In this section, we will learn about the different components on the Arduino board. Here the Arduino UNO board is used because it is the most popular board in the Arduino board family. In addition, it is the best board to get started with electronics and coding. Figure 6.1 shows an Arduino UNO board. Some boards look a bit different from the one given below, but most Arduinos have majority of these components in common.]]></pText>
+    </PageText>
+
+     <PageText>
+      <pText><![CDATA[<div class="BigImgClass" style="text-align:center"><img src="./images/fig_1.png"></div>]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[<div class="TableHeadingClass">Fig.6.1: Arduino UNO Board</div>]]></pText>
+    </PageText>
+
+    <PageText>
+      <pText><![CDATA[
+      
+      <ol class="DecimalNumberClass">
+        <li><b>Power USB:</b> Arduino board can be powered by using the USB cable from the computer. For this we need to connect the USB cable to the USB connection.</li>
+        <li><b>Power (Barrel Jack):</b> Arduino boards can be powered directly from the AC mains power supply by connecting it to the Barrel Jack.</li>
+        <li><b>Voltage Regulator:</b> The function of the voltage regulator is to control the voltage given to the Arduino board and stabilize the DC voltages used by the processor and other elements.</li>
+        <li><b>Crystal Oscillator:</b> The crystal oscillator helps Arduino in dealing with time issues. The number printed on top of the Arduino crystal is 16.000H9H. It tells us that the frequency is 16,000,000 Hertz or 16 MHz</li>
+        <li><b>Arduino Reset:</b> We can reset the UNO board in two ways. First, by using the reset button (17) on the board. Second, we can connect an external reset button to the Arduino pin labelled RESET (5).</li>
+        <li><b>Pin (3.3):</b> Supply 3.3 output volt</li>
+        <li><b>Pin 5V:</b> Supply 5 output volt</li>
+        <li><b>GND (Ground):</b> There are several GND pins on the Arduino, any of which can be used to ground our circuit.</li>
+        <li><b>Vin (9):</b> This pin also can be used to power the Arduino board from an external power source, like AC mains power supply.</li>
+        <li><b>Analog  Pins:</b> The Arduino UNO board has five analog input pins A0 through   A5. These pins can read the signal from an analog sensor like the humidity sensor or temperature sensor and convert it into a digital value that can be read by the microprocessor.</li>
+        <li><b>Main Microcontroller:</b> Each Arduino board has its own microcontroller. We can consider it as the brain of our board. The main IC (integrated circuit) on the Arduino is slightly different from board to board. The microcontrollers are usually of the ATMEL Company. We must know what IC our board has before loading up a new program from the Arduino IDE. This information is available on the top of the IC. For more details about the IC construction and functions, we can refer to the data sheet.</li>
+        <li><b>ICSP Pin:</b> ICSP is an AVR, a tiny programming header for the Arduino consisting of MOSI, MISO, SCK, RESET, VCC, and GND. It is often referred to as an SPI (Serial Peripheral Interface), which could be considered as an “expansion” of the output. We are making the output device a slave to the master of the SPI bus.</li>
+        <li><b>Power LED indicator:</b> This LED should light up when you plug your Arduino into a power source to indicate that our board is powered up correctly. If this light does not turn on, then there is something wrong with the connection.</li>
+        <li><b>TX and RX LEDs:</b> On the board, there will be two labels: TX (transmit) and RX (receive). They appear in two places on the Arduino UNO board. First at the digital pins 0 and 1. This indicates that the pins are responsible for serial communication. Second, the TX and RX led. The TX led flashes with different speed while sending the serial data. The speed of flashing depends on the baud rate used by the board. RX flashes during the receiving process.</li>
+        <li><b>Digital I/O:</b> The Arduino UNO board has 14 digital I/O pins (15) (of which 6 provide PWM (Pulse Width Modulation) output. These pins can be configured to work as input digital pins to read logic values (0 or 1) or as digital output pins to drive different modules like LEDs, relays, etc. The pins labeled “~” can be used to generate PWM.</li>
+        <li><b>AREF:</b> AREF stands for Analog Reference. It is sometimes, used to set an external reference voltage (between 0 and 5 Volts) as the upper limit for the analog input pins.</li>
+      </ol>
+
+      ]]></pText>
+    </PageText>      
+
+
+                
+  </PageData>
+</main>

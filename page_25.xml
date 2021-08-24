@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<main>
+  <PageData>
+	<MainHeading><![CDATA[]]></MainHeading>
+    <SubHeading><![CDATA[]]></SubHeading>
+    <PageText>
+      <pText><![CDATA[<b>	Servo Motor Interfaced with Arduino</b>]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[In this section, we discuss the integration of actuators with Arduino board. In this example, we use a servo motor interfaced with Arduino. Actuators are mechanical or electromechanical device that converts energy into motion. It is mainly used to provide controlled motion to other components. The basic working principle of a motor is that it uses different combination of various mechanical structures like screws, ball bearings and gears to produce motion. There are various types of motor actuators like servo motor, stepper motor, hydraulic motor, solenoid, relays, AC motor etc.]]></pText>
+    </PageText>
+      <PageText>
+      <pText><![CDATA[Servo motor is a high precision motor which provides rotary motion 0 to 180 degree. There are 3 wires in the servo motor: black or darkest is the Ground, red is the power supply and yellow is for signal pin. Arduino provides different library for different actuators. Servo library is the library containing functions to operate the servo motor. Following are some of the functions available with servo library.]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[
+        <ol class="DecimalNumberClass">
+            <li>Knob() - Control the position of a RC (hobby) servo motor with Arduino and a potentiometer.</li>
+            <li>Sweep() - Sweeps the shaft of a RC servo motor back and forth across 180 degrees.</li>
+            <li>write() - Writes a value to the servo, controlling the shaft accordingly. On a standard servo, this will set the angle of the shaft (in degrees), moving the shaft to that orientation. On a continuous rotation servo, this will set the speed of the servo (with 0 being full-speed in one direction, 180 being full speed in the other, and a value near 90 being no movement). Below is the syntax of write().
+                <div class="CodeBox"><div>servo.write(angle)</div></div><br/>
+                where servo is a variable of type Servo and angle is the value to write to the servo, from 0 to 180.
+             </li>
+             <li>writeMicroseconds() - Writes a value in microseconds (uS) to the servo, controlling the shaft accordingly. On a standard servo, this will set the angle of the shaft. On standard servos a parameter value of 1000 is fully counter-clockwise, 2000 is fully clockwise, and 1500 is in the middle. Following is the syntax.
+              <div class="CodeBox"><div>servo.writeMicroseconds(uS)</div></div><br/>
+              where servo is a variable of type Servo and uS is the value of the parameter in microseconds (int)
+             </li>
+            <li>read() - Read the current angle of the servo (the value passed to the last call to write()). Below is the syntax.
+            <div class="CodeBox"><div>servo.read()</div></div><br/>
+            where servo is a variable of type Servo. The function returns the angle of the servo, from 0 to 180 degrees.
+            
+            </li>
+             <li>attach() - Attach the servo variable to a pin. Following is the syntax.
+            <div class="CodeBox"><div>servo.attach(pin) </div></div>
+            <div class="CodeBox"><div>servo.attach(pin, min, max)</div></div><br/>
+            where servo is a variable of type Servo, pin is the number of the pin that the servo is attached to and min (optional) is the pulse width, in microseconds, corresponding to the minimum (0-degree) angle on the servo (defaults to 544) and max (optional) is the pulse width in microseconds corresponding to the maximum (180-degree) angle on the servo (defaults to 2400)
+            
+            </li>
+            <li>detach() - Detach the servo variable from its pin. Following is the syntax.
+            servo.detach()<br/>
+             where servo is a variable of type Servo.
+            </li>
+        </ol>
+      ]]></pText>
+    </PageText>
+     <PageText>
+      <pText><![CDATA[<b>Connection</b>]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[<b>Connect the ground of the servo to the Ground of the Arduino board. Connect the power supply wire to the 5v pin of the board. Connect the signal wire to any digital output pin. Here we have used pin 8.</b>]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[<b>Sketch</b>]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[
+      <div class="CodeBox">
+        <div>#include<Servo.h></div>
+        <div>//Including the servo library for the program</div>
+        <div>int servoPin=12;/div>
+        <div>Servo ServoDemo;//Creating a servo object </div>
+        <div>void setup(){</div>
+        <div>//The servo pin must be attached to the servo before it can be used. </div>
+        <div>ServoDemo.attach(servoPin);</div>
+        <div>}</div>
+        <div>void loop(){</div>
+        <div>//servo moves to 0 degrees </div>
+        <div>ServoDemo.Write(0); </div>
+        <div>delay(1000);</div>
+        <div>//servo moves to 90 degrees </div>
+        <div>delay(1000);</div>
+        <div>//servo moves to 180 degrees </div>
+        <div>ServoDemo.Write(180); </div>
+        <div>delay(1000);</div>
+        <div>}</div>
+      </div>
+      ]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[  We have created an instance of the class Servo to use it in the sketch. The instance must be attached to the pin before being used in the code. Write() function takes the degree value and rotates the motor accordingly. Connect the board to the PC. Select the port and board type. Verify and upload the code.]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[<b>Output</b>]]></pText>
+    </PageText>
+    <PageText>
+      <pText><![CDATA[<b>The motor turns 0, 90 and 180 degrees with a delay of 1 second each.</b>]]></pText>
+    </PageText>
+  </PageData>
+</main>
